@@ -1,0 +1,13 @@
+Understanding Port Scanning with Nmap
+At the heart of Nmap lies its ability to perform port scanning. A port scan is like knocking on the doors of a device to see which ones open. Each “door” is a port, and each open port represents a service running on the device — like SSH (port 22), HTTP (port 80), or DNS (port 53).
+
+Why does this matter? Because knowing which ports are open can help you determine what type of services a machine is running, which in turn helps detect security risks. For example, if port 22 is open, you know that SSH is likely active. If port 3306 is open, that’s typically a MySQL database.
+
+Using Nmap, you can easily run a command like:
+
+bash
+
+nmap 192.168.1.1
+This will scan the device at that IP and show you which ports are open, which services are running, and sometimes even their version numbers.
+
+The more you scan, the more patterns you’ll begin to recognize, helping you develop strong network reconnaissance skills.
