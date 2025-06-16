@@ -1,0 +1,13 @@
+Host Discovery – Finding Live Devices with Nmap
+Before scanning ports, you need to know what devices are online. That’s where host discovery comes in. Nmap can identify active hosts on a network using different techniques such as ping sweeps, ARP requests, and TCP handshakes.
+
+Why is this important? In large networks, knowing which devices are up and communicating can help you map your environment or identify unauthorized devices.
+
+Example command:
+
+bash
+
+nmap -sn 192.168.1.0/24
+This command will ping all devices in a subnet and report which ones are online. It’s fast, efficient, and incredibly helpful in both small and enterprise networks.
+
+Host discovery is often the first step in any penetration test or network audit.
